@@ -1,0 +1,4 @@
+community,agent_repos,top1_pct,top5_pct,median_per_repo,repos_with_one,top5
+bioconductor,139,11.6,33.2,2.0,53,debrowser 169; spicyR 97; SpaNorm 93; decontX 62; GEOquery 61
+biopython,1,100.0,100.0,1.0,1,biopython/biopython 1
+nf-core,88,17.4,46.1,7.0,14,nf-core/rnaseq 683; nf-core/modules 353; nf-core/metatdenovo 347; nf-core/epitopeprediction 223; nf-core/riboseq 198

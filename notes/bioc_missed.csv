@@ -1,0 +1,100 @@
+package,sha,date,author,subject,matched_word,FInal_kind (verified),note,suggestion_note,evidence_line
+ASpli,18c792e,2026-10-30,dev_cc7b1952,claude environment setup,claude,B,,,claude environment setup
+AnVILGCP,f5faabb,2026-05-22,dev_0776df88,add code chunk labels to vignette,Gemini,A,,,Co-authored-by: Gemini 3.5 Flash <gemini@google.com>
+BiocCheck,44539e4,2026-06-17,dev_0776df88,add .positai and .claude to bad dirs list,claude,N,,,add .positai and .claude to bad dirs list
+BiocPkgTools,b0615ec,2026-05-20,dev_0776df88,update NEWS,Gemini,A,,,Co-authored-by: Gemini 3.5 Flash <gemini-assistant@google.com>
+BreastSubtypeR,3a44af7,2026-10-20,dev_ff9380e4,fix(mapping): preserve singleton rows for max selection,Codex,A,,,Prepared with Codex assistance under the author-approved singleton-preservation scope.
+BreastSubtypeR,b20e62c,2026-10-20,dev_ff9380e4,docs(mapping): clarify max singleton preservation,Codex,A,,,Prepared with Codex assistance.
+BreastSubtypeR,9220afa,2026-10-20,dev_ff9380e4,chore: advance development version to 1.5.9,Codex,A,,,Prepared with Codex assistance.
+BreastSubtypeR,ac0de63,2026-10-21,dev_ff9380e4,docs: remove dated InputCoverage availability claims,Codex,A,,,Prepared with Codex assistance.
+BreastSubtypeR,68d9115,2026-10-21,dev_ff9380e4,docs: format the Brief description feature list,Codex,A,,,Prepared with Codex assistance.
+BreastSubtypeR,ed06128,2026-10-21,dev_ff9380e4,chore: add a reproducible bug-report issue form,Codex,A,,,Prepared with Codex assistance.
+CAGEr,7fde537,2025-10-01,dev_475e3a64,Remove for loop and fix spelling,Copilot,C,,Thanks to Copilot: unclear how,Thanks to Copilot.
+CRISPRball,a595317,2024-12-18,dev_c86dd408,Remove MAGeCKFlute dependencies due to deprecation,Copilot,A,,,"For more details, open the [Copilot Workspace session](https://copilot-workspace.githubnext.com/j-andrews7/CRISPRball/issues/33?shareId=XXXX-XXXX-XXXX"
+CRISPRseek,08f5391,2025-01-30,dev_0767d028,add Devin,Devin,N,,adds a person named Devin to DESCRIPTION,add Devin
+ChIPseeker,83ffce7,2026-10-01,dev_1c749ecb,fix transcript/gene level annotation consistency and sub-1kb flank binning,cursor,N,,R variable named cursor,"""Error in cursor:(cursor + seq - 1) : result would be too long a vector"" for"
+DOSE,80bf584,2026-07-26,dev_1c749ecb,add offline template disease explanations,LLM,D,,,"Introduce explainDisease(method = ""template"") and wire interpretDisease(..., explain = ""template"") to produce evidence-grounded summaries offline whil"
+DOSE,fc5cdaf,2026-07-27,dev_1c749ecb,add optional llm explanation adapter,llm,D,,,add optional llm explanation adapter
+EWCE,3396ab5,2026-10-09,dev_63e03f25,Ignore .positai and .claude directories,claude,N,,,Ignore .positai and .claude directories
+GSEABase,8843b90,2025-08-27,dev_0776df88,add copilot instructions,copilot,B,,,add copilot instructions
+GSVA,f5d985a,2026-06-30,dev_bf70332c,Fixes addressing issues raised by the Copilot review,Copilot,C,,,Fixes addressing issues raised by the Copilot review
+GSVA,fbbaec9,2026-07-14,dev_bf70332c,Fixing glitches in the C code uncovered by GitHub Copilot during PR review. Thanks Copilot!,Copilot,C,,,Fixing glitches in the C code uncovered by GitHub Copilot during PR review. Thanks Copilot!
+HiCcompare,8471ef2,2026-09-17,dev_5f7a8841,Merge pull request #36 from dozmorovlab/copilot/fix-vignette-building-error,copilot,A,,,Merge pull request #36 from dozmorovlab/copilot/fix-vignette-building-error
+ImageArray,c10a8a3,2026-08-04,dev_8c129118,Add Claude Code GitHub Workflow (#50),Claude,B,,,"Add Claude Code GitHub Workflow (#50) / * ""Claude PR Assistant workflow"" / * ""Claude Code Review workflow"""
+ImageArray,d5598ef,2026-08-07,dev_8c129118,more Bioformats formats (#52),claude,A,,,* claude fixes and version bump
+ImageArray,81809f2,2026-08-10,dev_8c129118,Compatibility with Huber-group-EMBL/romeo (#54),claude,C,,,* claude review
+KEGGREST,c70f46c,2026-06-16,dev_0776df88,update color.pathway.by.objects to use new kegg/webapp/color_url docs,gemini,A,,,authored-by: gemini 3.5 flash
+MSstats,cf7f650,2024-10-31,dev_9674992b,ci(codium): Add codium agent to PRs for MSstats (#141),openAI,B,,,* add openAI org secret to template
+MSstats,60f46c2,2025-01-07,dev_9674992b,fix(fractions): Ensure input can be processed with fractions and technical replicates (#147),chatGPT,C,,,* address chatGPT comments
+MSstatsBioNet,b4692ab,2024-10-31,dev_9674992b,refactor(collapse-edges): Refactor how edges are collapsed to remove clutter (#19),chatGPT,C,,,* added additional corrections from chatGPT
+MSstatsBioNet,5e7968e,2025-04-01,dev_9674992b,feat(source-filter): Add source filter to getSubnetworkFromIndra (#41),chatgpt,C,,,* add refactor comments form chatgpt
+MSstatsShiny,f038149,2024-10-31,dev_9674992b,ci(codium): Add chatgpt PR agent,chatgpt,B,,,ci(codium): Add chatgpt PR agent
+MassSpecWavelet,8fe5c06,2024-12-18,dev_82f35d34,Initialize variable to make linter happy,ChatGPT,C,,,ChatGPT claimed kmax was used uninitiañized at: / Therefore ChatGPT was wrong.
+MetaProViz,a5c261f,2025-11-02,dev_3a1afa3d,fixed indentation and `else if` → `if` issues introduced by claude + further manual cleanup of messy code,claude,C,,human cleanup of code Claude wrote earlier,fixed indentation and `else if` → `if` issues introduced by claude + further manual cleanup of messy code
+MetaProViz,72c9bda,2025-11-18,dev_3a1afa3d,added claude notes & instructions,claude,B,,,added claude notes & instructions
+MutSeqR,542c2c4,2024-02-12,dev_40a53f0e,Fixing formatting based on copilot suggestions. Add modelling to the RMD,copilot,C,,,Fixing formatting based on copilot suggestions. Add modelling to the RMD
+OmnipathR,bc0c401,2026-02-26,dev_3a1afa3d,include `CLAUDE.md`,CLAUDE,B,,,include `CLAUDE.md`
+SpaceMarkers,741ec3d,2026-04-22,dev_8caf97fb,fix: address Copilot review on PR #92,copilot,C,,,fix: address Copilot review on PR #92
+SpaceMarkers,5a67e20,2026-04-22,dev_8caf97fb,"fix: second-round Copilot review (SpaceMarkers dispatch, setter, img crop, .data)",Copilot,C,,,"fix: second-round Copilot review (SpaceMarkers dispatch, setter, img crop, .data)"
+SpaceMarkers,a87d201,2026-04-28,dev_8caf97fb,"fix: address Copilot review batches 4 + 5 (NULL guards, coord swap)",Copilot,C,,,"fix: address Copilot review batches 4 + 5 (NULL guards, coord swap) / Five comments across the 2026-04-23 and 2026-04-28 Copilot reviews:"
+SpaceMarkers,4dadee6,2026-04-28,dev_8caf97fb,chore: tighten Rbuildignore + gitignore for Bioconductor submission,claude,N,,,"new_heatmap*.png). Also exclude .claude/, ..Rcheck/, .Rcheck/, / before  : 38 MB, .claude/worktrees/* + .. analysis junk in tarball"
+SpaceTrooper,949aee8,2025-07-22,dev_d1db2121,adding cosmx protein (as codex) dataset,codex,N,,CODEX = imaging technology,adding cosmx protein (as codex) dataset
+SpectralTAD,cd2ec73,2026-07-15,dev_5f7a8841,Merge pull request #16 from dozmorovlab/copilot/modify-eigenvector-computation,copilot,A,,,Merge pull request #16 from dozmorovlab/copilot/modify-eigenvector-computation
+SpiecEasi,3c74772,2026-04-29,dev_980077ca,Version 2.1.1: align vignette YAML with DESCRIPTION; exclude venv from builds,Cursor,A,,,Made-with: Cursor
+TADCompare,3b85516,2026-07-15,dev_5f7a8841,Merge pull request #29 from dozmorovlab/copilot/replace-eigs-sym-function,copilot,A,,,Merge pull request #29 from dozmorovlab/copilot/replace-eigs-sym-function
+annotatr,3444a67,2025-10-11,dev_136c1feb,Update for ggplot2 v4 with help from Claude,Claude,A,,,Update for ggplot2 v4 with help from Claude
+betterChromVAR,0ef3a0c,2026-10-08,dev_2d7f4527,claude-generated unit tests...,claude,A,,,claude-generated unit tests...
+celda,df717d6,2026-06-26,dev_ccf8153e,"""Claude PR Assistant workflow""",Claude,B,,,"""Claude PR Assistant workflow"""
+celda,9c72429,2026-06-26,dev_ccf8153e,"""Claude Code Review workflow""",Claude,B,,,"""Claude Code Review workflow"""
+clusterProfiler,cb324d4,2026-02-28,dev_cc175a7f,chore: update ignore files for LLM config,LLM,D,,,chore: update ignore files for LLM config
+clusterProfiler,641a889,2026-02-28,dev_cc175a7f,feat: Replace fanyi with aisdk for LLM-based interpretation,LLM,D,,,feat: Replace fanyi with aisdk for LLM-based interpretation
+debrowser,aa2cde6,2026-05-04,dev_87b5275a,phase E12.A.6: list_models + ai_chat provider abstraction,anthropic,D,,,"ellmer per provider (anthropic/openai/ollama), falls back to hardcoded"
+debrowser,c0046aa,2026-05-14,dev_87b5275a,feat(E12.B.1): fct_ai_markdown - sanitized commonmark renderer + 12 tests,LLM,D,,,Pure helper .render_markdown_sanitized() renders LLM markdown via
+debrowser,4f2e7a3,2026-05-14,dev_87b5275a,fix(E12.B.7): wire concordance pathway picker to reconcile_enrichments preset,LLM,D,,,concordance path. The LLM was getting pathway_name='(unknown)' and
+dominoSignal,cd1fc7e,2026-03-03,dev_50e25328,small fixes from copilot code review,copilot,C,,,small fixes from copilot code review
+dominoSignal,3e93257,2026-03-04,dev_50e25328,"fix typos, small tweaks from copilot review",copilot,C,,,"fix typos, small tweaks from copilot review"
+dominoSignal,0cc6126,2026-03-06,dev_50e25328,address copilot review comments,copilot,C,,,address copilot review comments
+dominoSignal,f5f96e8,2026-03-09,dev_50e25328,address relevant copilot comments,copilot,C,,,address relevant copilot comments
+dominoSignal,ba17c0c,2026-03-11,dev_50e25328,address applicable copilot comments,copilot,C,,,address applicable copilot comments
+dominoSignal,2b815fc,2026-03-16,dev_50e25328,copilot fixes,copilot,C,,,copilot fixes
+dominoSignal,4620fef,2026-04-21,dev_50e25328,edits suggested by copilot,copilot,C,,,edits suggested by copilot
+dominoSignal,e68ddc4,2026-09-16,dev_50e25328,Address copilot reviews,copilot,C,,,Address copilot reviews
+dominoSignal,a79eda4,2026-09-25,dev_50e25328,"Spell check, linting, address copilot review notes",copilot,C,,,"Spell check, linting, address copilot review notes"
+dominoSignal,f32f407,2026-10-08,dev_50e25328,"Fix copilot bugs - error handling in create_domino for missing receptor genes, create_rl_map_cellphonedb gene conversion edge cases, returning appropriate objects even with empty results",copilot,C,,,"Fix copilot bugs - error handling in create_domino for missing receptor genes, create_rl_map_cellphonedb gene conversion edge cases, returning appropr"
+doppelgangR,a874ca0,2026-07-17,dev_62f1e966,Add tests and fix edgecases to improve coverage,gemini,A,,,Co-authored-by: Antigravity <gemini@google.com>
+doppelgangR,8568f47,2026-07-17,dev_62f1e966,Address Copilot PR review comments,Copilot,A,,Antigravity co-author + Copilot review,Address Copilot PR review comments / Co-authored-by: Antigravity <gemini@google.com>
+doppelgangR,c11ebce,2026-07-17,dev_62f1e966,Resolve BiocCheck warnings and notes,gemini,A,,,Co-authored-by: Antigravity <gemini@google.com>
+doppelgangR,944f980,2026-07-17,dev_62f1e966,Fix vignette build when suggested packages are missing and add chunk labels,gemini,A,,,Co-authored-by: Antigravity <gemini@google.com>
+doppelgangR,477eb7d,2026-07-17,dev_62f1e966,Fix order of variables in doppelgangR examples to avoid not found error,gemini,A,,,Co-authored-by: Antigravity <gemini@google.com>
+doppelgangR,53e0f7a,2026-07-17,dev_62f1e966,Fix DataFrame export in colFinder.R example,gemini,A,,,Co-authored-by: Antigravity <gemini@google.com>
+doppelgangR,66082ff,2026-07-17,dev_62f1e966,Address Copilot review comment on mst.mle test,Copilot,C,,,Address Copilot review comment on mst.mle test
+doppelgangR,24d36f4,2026-07-17,dev_62f1e966,Address Copilot and lwaldron PR comments,Copilot,C,,,Address Copilot and lwaldron PR comments
+doppelgangR,23b2848,2026-07-17,dev_62f1e966,"Address Copilot reviews: Add loop-range guards, seq_len loops, dynamic parameter checks, and roxygen docs for col_freqs",Copilot,C,,,"Address Copilot reviews: Add loop-range guards, seq_len loops, dynamic parameter checks, and roxygen docs for col_freqs"
+gDRcore,d00e990,2026-07-08,dev_3132478a,"fix: address Gemini review — merge safety, concentration column, NA handling, warning dedup",Gemini,C,,,"fix: address Gemini review — merge safety, concentration column, NA handling, warning dedup"
+gDRcore,58f6b24,2026-07-14,dev_3132478a,"fix: address Gemini review — per-point Bliss/HSS, anti-join upsert, empty xc50, split() in summary",Gemini,C,,,"fix: address Gemini review — per-point Bliss/HSS, anti-join upsert, empty xc50, split() in summary"
+gDRcore,2de3563,2026-07-21,dev_3132478a,"style: apply Gemini review — .SDcols = !c() instead of -c(), any() instead of min() (GDR-3486)",Gemini,C,,,"style: apply Gemini review — .SDcols = !c() instead of -c(), any() instead of min() (GDR-3486)"
+gDRcore,3cec1d0,2026-07-29,dev_3132478a,fix: address Darek's review — 4 bugs + style fixes in fit_utils.R/fit_SE.R,CLAUDE,N,,,Style (CLAUDE.md):
+gDRcore,1f6702d,2026-08-12,dev_3132478a,docs: add CLAUDE.md with local dev commands for gDRcore,CLAUDE,B,,,docs: add CLAUDE.md with local dev commands for gDRcore
+gDRcore,11edb3c,2026-08-12,dev_3132478a,docs: expand CLAUDE.md with vignette pre-push checklist (GDR-3352),CLAUDE,B,,,docs: expand CLAUDE.md with vignette pre-push checklist (GDR-3352)
+gDRcore,2070c10,2026-08-12,dev_3132478a,docs: remove CLAUDE.md from open-source repo (internal notes moved to jira-context) (GDR-3352),CLAUDE,B,,,docs: remove CLAUDE.md from open-source repo (internal notes moved to jira-context) (GDR-3352)
+hermes,a7ea2c8,2026-07-11,dev_1f2aaddb,add codex and ssh support in devcontainer,codex,B,,,add codex and ssh support in devcontainer
+igvShiny,413be88,2026-07-17,dev_c5ee99c0,chore: keep CLAUDE.md out of the package build,CLAUDE,B,,,chore: keep CLAUDE.md out of the package build / CLAUDE.md is a symlink to project notes kept outside git. R CMD build
+igvShiny,33298b0,2026-07-25,dev_c0b9e7d3,chore: configure CodeRabbit and check external assets on a schedule (#115) (#133),Gemini,B,,,Automated review changed underneath us when Gemini Code Assist shut down;
+igvShiny,d5bca1f,2026-08-22,dev_c0b9e7d3,fix: remove a session's track files when the session ends (#173),CLAUDE,B,,,* docs: point agents at a local CLAUDE.md when one is present
+immLynx,19fc9e9,2026-05-14,dev_8372d93c,remove claude,claude,B,,,remove claude
+lefser,4ae39bf,2026-04-09,dev_62f1e966,Fix ldaFunction unit test by replacing collinear data,Gemini,C,,Gemini Code Assist co-author: same kind as gDRutils (you marked borderline); A or C?,Co-authored-by: Gemini Code Assist <gemini@google.com>
+lefser,73f4c66,2026-04-09,dev_62f1e966,Fix tidyselect and ggplot2 deprecation warnings,Gemini,C,,same as 83,Co-authored-by: Gemini Code Assist <gemini@google.com>
+lefser,ece2e4e,2026-04-10,dev_62f1e966,Address Copilot code review for PR #100,Copilot,C,,same as 83; also Copilot review,Address Copilot code review for PR #100 / Co-authored-by: Gemini Code Assist <gemini@google.com>
+lefser,dae31e4,2026-04-10,dev_62f1e966,Fix ldaFunction test stability across platforms,Gemini,C,,same as 83,Co-authored-by: Gemini Code Assist <gemini@google.com>
+lefser,7c41881,2026-04-10,dev_62f1e966,Add AI package instructions using waldronlab skill,Gemini,C,,same as 83; adds AI instructions,Co-authored-by: Gemini Code Assist <gemini@google.com>
+lefser,4a862f3,2026-04-22,dev_62f1e966,Extract zeller14 dataset loading into helper function,Copilot,C,,,Refactors the dataset loading boilerplate from multiple test files into a shared `load_lefser_dataset` helper function in `tests/testthat/helper-data.
+lemur,abb2dc8,2026-07-19,dev_91bbc4fc,Claude harmony re-implementation,Claude,A,,,Claude harmony re-implementation
+lemur,1917837,2026-07-19,dev_91bbc4fc,Claude harmony re-implementation,Claude,A,,,Claude harmony re-implementation
+maaslin3,8b0776b,2026-03-06,dev_bec448d9,"Fix R CMD check warnings: remove self ::: calls, fix NAMESPACE imports",Cursor,A,,,Made-with: Cursor
+methylKit,092b99c,2024-11-12,dev_eb714098,Fix bedgraph error due to NA handling in meth.diff export,Copilot,A,,,"For more details, open the [Copilot Workspace session](https://copilot-workspace.githubnext.com/al2na/methylKit/issues/331?shareId=XXXX-XXXX-XXXX-XXXX"
+omicsViewer,e6dda5a,2025-10-17,dev_10e8439e,code check with claude,claude,C,,Claude used to check code,code check with claude
+ontoProc,6144613,2025-07-20,dev_e116dedf,introducing capability to use LLM,LLM,D,,,introducing capability to use LLM
+philr,1ec4eec,2026-04-01,dev_98657220,feat: adding CLAUDE.md,CLAUDE,B,,,feat: adding CLAUDE.md
+qsvaR,72b0ca1,2024-06-17,dev_f73d59a1,Update README.md,LLM,N,,maintainer guesses LLM text,"Not sure how ""Religion"" got in there..  LLM autogenerated?"
+scGraphVerse,4fdb4c8,2025-07-11,dev_7609fbcf,fix: Resolve R CMD check warnings and notes,claude,N,,,- Add .claude to .Rbuildignore to ignore hidden files
+tidySummarizedExperiment,cd76e82,2026-03-11,dev_9bea7a98,Rename pivot.R to subset_data.R,Cursor,A,,,Made-with: Cursor

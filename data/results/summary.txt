@@ -1,0 +1,258 @@
+
+--- Table I: repositories with an agent commit or a context file ---
+bioconductor: agent commit 139 (5.7%), context file 25, both 16, either 148 of 2418 (6.1%)
+nf-core: agent commit 88 (52.1%), context file 31, both 27, either 92 of 169 (54.4%)
+biopython: agent commit 1 (100.0%), context file 0, both 0, either 1 of 1 (100.0%)
+
+--- Table I: agent commits by agent ---
+community         bioconductor  nf-core  biopython
+agent                                             
+Claude Code               1257     3573          0
+Copilot                    150      165          1
+Cursor                      19       61          0
+Gemini and Jules            24        1          0
+Other                        1      116          0
+Claude Code share: bioconductor 86.6%, biopython 0.0%, nf-core 91.2%
+
+--- Commits found only by our local rules ---
+community
+nf-core         205
+bioconductor     30
+
+--- Agent commits the rules miss (checked by hand, kind A) ---
+bioc_missed.csv: 28 kind A, 12 not flagged
+nfcore_missed.csv: 113 kind A, 13 not flagged
+nfcore_missed_extra.csv: 67 kind A, 0 not flagged
+nfcore_dev_missed.csv: 86 kind A, 83 not flagged
+not counted: {'bioconductor': 12, 'nf-core': 96}
+
+--- Assisted-by lines and context-file dates ---
+bioconductor: 17 Assisted-by commits, 9 from the policy date (2026-05-28)
+nf-core: 9 Assisted-by commits, 9 from the policy date (2026-04-23)
+nf-core AGENTS.md: 27 repositories, first added 2026-04-27 to 2026-10-13
+nf-core CLAUDE.md: 10 repositories, first added 2025-07-02 to 2026-07-24
+
+--- nf-core monthly share, with and without the two busiest repositories ---
+2026-03: 4.7%, without top two 3.6% (nf-core/rnaseq 40, nf-core/modules 23)
+2026-04: 11.1%, without top two 4.7% (nf-core/rnaseq 141, nf-core/modules 26)
+2026-05: 7.9%, without top two 4.7% (nf-core/rnaseq 54, nf-core/differentialabundance 30)
+2026-06: 8.2%, without top two 6.5% (nf-core/riboseq 29, nf-core/rnaseq 20)
+2026-07: 12.0%, without top two 8.2% (nf-core/riboseq 68, nf-core/metatdenovo 32)
+2026-08: 14.8%, without top two 11.2% (nf-core/metatdenovo 74, nf-core/ampliseq 23)
+2026-09: 39.0%, without top two 32.4% (nf-core/metatdenovo 142, nf-core/rnaseq 83)
+2026-10: 33.5%, without top two 28.8% (nf-core/rnasplice 102, nf-core/metatdenovo 98)
+
+--- Biopython pull requests with an agent trace ---
+573 pull requests since 2024, 6 with a trace
+#5392 2026-10-27 (after policy), not merged: codex/
+#5384 2026-10-20 (after policy), not merged: Generated with [Claude Code
+#5247 2026-06-25 (after policy), not merged: Made with [Cursor
+#5204 2026-04-27 (before policy), not merged: claude/
+#5199 2026-04-17 (before policy), not merged: Co-Authored-By: Claude
+#5085 2025-10-15 (before policy), not merged: generated with [Claude Code
+
+--- Validation ---
+is_agent (yes/no/borderline)  borderline  no  yes
+sample                                           
+flagged                                2   0   48
+unflagged                              0  50    0
+comparison group: {'yes': 15, 'borderline': 5}
+
+--- Comparison group ---
+2317 repositories, 655 with an agent commit or context file (28.3%)
+
+--- RQ3 / Table III, communities ---
+250 commits from 93 repositories, at most 9 per repository
+touches_scientific_logic   no  yes  All
+community                              
+bioconductor               99   26  125
+biopython                   1    0    1
+nf-core                   100   24  124
+All                       200   50  250
+
+scientific logic, risk category by tests
+tests                            added  modified  none  All
+risk_category                                              
+coordinates                          1         0     2    3
+file-format parsing                  7         2     4   13
+genome build/annotation version      1         0     3    4
+numerical precision                  1         1     0    2
+other                                3         0     6    9
+statistics                          14         1     4   19
+All                                 27         4    19   50
+
+all commits, scientific logic by tests
+tests                     added  modified  none  All
+touches_scientific_logic                            
+no                           25        36   139  200
+yes                          27         4    19   50
+All                          52        40   158  250
+
+change types
+change_type
+docs          67
+bug fix       45
+feature       38
+CI/config     33
+refactor      33
+tests         26
+dependency     8
+
+concern by how the commit went in
+concern                       likely  none  possible  All
+community    route                                       
+bioconductor PR                    0    55         3   58
+             no GitHub repo        0     7         0    7
+             pushed directly       3    57         0   60
+biopython    PR                    0     1         0    1
+nf-core      PR                    1   113         0  114
+             pushed directly       0    10         0   10
+All                                4   243         3  250
+
+commits with a concern
+ id                repo  concern                                             pr_link
+  4            GEOquery possible       https://github.com/seandavi/GEOquery/pull/162
+ 22        singleCellTK possible https://github.com/compbiomed/singleCellTK/pull/800
+ 25              spicyR   likely                             no PR (pushed directly)
+ 81        singleCellTK possible https://github.com/compbiomed/singleCellTK/pull/799
+ 96           GBScleanR   likely                             no PR (pushed directly)
+143           simpleSeg   likely                             no PR (pushed directly)
+209 nf-core/panoramaseq   likely       https://github.com/nf-core/panoramaseq/pull/1
+
+scientific-logic commits with the note on how each went in
+ id                      repo  concern                                                                                                             concern_note
+  2                 S4Vectors     none                                                               Merged by the maintainer and backported; no formal review.
+  4                  GEOquery possible Copilot changed the code in two attempts after the maintainer reported failing tests; merged without review about 20 ...
+ 10                   SpaNorm     none                    Pushed without review, but a test checks results are unchanged. Later fix not related to this change.
+ 11                HiCcompare     none Merged without review, but the added test verifies the results. No later changes or issues. (sha changed from merge 8...
+ 20                 methylSig     none                                                                          PR self-merged by the maintainer and CI passed.
+ 22              singleCellTK possible Results change on purpose (new clusters ARI 0.72 vs old). Author compared old and new results, but no review is visib...
+ 25                    spicyR   likely Pushed directly, no review. New adjustment silently dropped when a condition was missing; found by the author on real...
+ 27      nf-core/scdownstream     none                                                                                 Self-merged, no review and no later fix.
+ 33               nf-core/mag     none                                                                         Approved by another maintainer and no later fix.
+ 35       nf-core/metatdenovo     none                                                         Approved by another maintainer, checks passed, and no later fix.
+ 39 nf-core/epitopeprediction     none Author flagged the parsing as risky in review, then approved by another maintainer after checks passed, and no later ...
+ 40           nf-core/modules     none Two approvals; one reviewer re-implemented the edgeR analysis independently and got identical results. Requested chan...
+ 47           nf-core/modules     none                                                         Approved by another maintainer, checks passed, and no later fix.
+ 58                    spicyR     none                                                                    Pushed without review, tests added, and no later fix.
+ 66                   SpaNorm     none Adds an offset and a dispersion range to the NB fit in polishNB(), default output unchanged. Pushed directly without ...
+ 77                     MeLSI     none Replaces aov() and adonis2() with hand-written formulas, p-values are identical. Pushed directly without review and n...
+ 81              singleCellTK possible Drops cells without a group (the new scrapper code had kept them as an extra NA group, which misaligned cluster sizes...
+ 84                     VISTA     none                                                                        Pushed without review, tests added, no later fix.
+ 86                   SpaNorm     none fitNB() gets a path that skips the dispersion loop when psi is supplied, default output unchanged. Pushed directly wi...
+ 91                 methylumi     none                                     Fixes a user-reported bug, self-merged, tests added, checks passed and no later fix.
+ 97                 methylSig     none Fixes the null model so it uses only the case and control samples. With other groups present, the likelihood ratio st...
+102                  netboost     none                                     Replaces per-pair correlation loops with matrix cor() calls. No PR and no later fix.
+110                     CoSIA     none Replaces separate_rows with unnest so the VST values are read as numbers instead of NA in the violin plots. Pushed di...
+115                MetaProViz     none Simplifies the shared-network plot and drops the overlap coefficient. Pushed directly without review, tests modified....
+117                    sccomp     none                                                                  Agent fixed the issue, checks passed, and no later fix.
+122                    spicyR     none Lowers the minimum number of patients needed to test a radius (from 3 to min(3, m_g/2)). Pushed directly without revi...
+132                  annotatr     none                                                               Self-merged without review, tests added, and no later fix.
+134                   Statial     none Sets labelClustering to FALSE by default in kontextualTest, so p-values are calibrated under relabelling of the image...
+135                    TaxSEA     none Taxon sets are now chosen correctly when a name matches several NCBI IDs, pushed directly without review, and no late...
+137                 lisaClust     none Moves the LISA computation to C++ and fixes regions assigned to the wrong cells when images were interleaved. Pushed ...
+141              SpaceMarkers     none                               Rewrites internal helpers with the new SME pipeline methods, tests added and no later fix.
+143                 simpleSeg   likely                                                                           Pushed without review and fixed 3 hours later.
+152         nf-core/rnasplice     none                                                        Reviewed in detail and approved, checks passed, and no later fix.
+154             nf-core/sarek     none First version had several bugs and all fixed in the same PR before merge; then approved, all checks passed and tested...
+156               nf-core/mag     none                   Changes the MetaBAT2 and SemiBin2 minimum contig length options; approved in PR 1118 and no later fix.
+157          nf-core/mhcquant     none Computes the spectral-library global FDR per search preset instead of in one fixed global group. Approved in PR 443, ...
+179      nf-core/seqinspector     none                                      Approved by another maintainer, merged by a third, checks passed, and no later fix.
+184      nf-core/cellpainting     none                                                                           Reviewed and comments addressed; no later fix.
+186      nf-core/scdownstream     none                                         Self-merged without review, all 34 checks passed, tests added, and no later fix.
+200               nf-core/mag     none                    Updates the PyDamage containers so docker results match conda. Approved in PR 1088, and no later fix.
+206    nf-core/rnastructurome     none                                                                               Reviewed, checks passed, and no later fix.
+209       nf-core/panoramaseq   likely                         Cleanup commit dropped the tool settings without saying so merged with failing tests; not fixed.
+216       nf-core/metatdenovo     none                                    Fixes misdetection of already formatted MetaEuk input, tests added, and no later fix.
+220 nf-core/epitopeprediction     none                                                                         Approved by another maintainer and no later fix.
+222             nf-core/sarek     none Fixes how SnpSift finds its database file and makes snpsift-only mode fall back to the original VCF. Approved in PR 2...
+231         nf-core/taxmarker     none                                                                         Approved by another maintainer and no later fix.
+235         nf-core/taxmarker     none                                                                         Approved by another maintainer and no later fix.
+238          nf-core/ampliseq     none                                                                         Approved by another maintainer and no later fix.
+241         nf-core/taxmarker     none                                                                                        Pushed directly and no later fix.
+247    nf-core/rnastructurome     none                                                                            Approved in the release PR and checks passed.
+
+--- RQ3 / Table III, comparison group ---
+100 commits from 73 repositories, at most 2 per repository
+touches_scientific_logic  no  yes  All
+community                             
+github-topic              77   23  100
+All                       77   23  100
+
+scientific logic, risk category by tests
+tests                added  none  All
+risk_category                        
+coordinates              3     0    3
+file-format parsing      5     1    6
+other                    7     3   10
+statistics               3     1    4
+All                     18     5   23
+
+all commits, scientific logic by tests
+tests                     added  modified  none  All
+touches_scientific_logic                            
+no                           20         5    52   77
+yes                          18         0     5   23
+All                          38         5    57  100
+
+change types
+change_type
+bug fix       27
+docs          26
+feature       22
+tests          7
+refactor       6
+CI/config      6
+dependency     6
+
+concern by how the commit went in
+concern                       likely  none  All
+community    route                             
+github-topic PR                    2    57   59
+             pushed directly       1    40   41
+All                                3    97  100
+
+commits with a concern
+ id                    repo concern                                             pr_link
+309         iLivius/BacFlux  likely                             no PR (pushed directly)
+330 biodatageeks/polars-bio  likely https://github.com/biodatageeks/polars-bio/pull/304
+381      GenomicAI/truecell  likely       https://github.com/GenomicAI/truecell/pull/23
+
+risk category 'other', what the change was about
+ id                       repo                 risk_in_other_risk_category
+309            iLivius/BacFlux       Mobile-element (ICE) evidence scoring
+320         MannLabs/alphabase             modification masses/definitions
+337             saezlab/annnet                        network coefficients
+344             SkBlaz/py3plex     combining and filtering network results
+347 obophenotype/cell-ontology        biological classification/definition
+356         BBQuercus/eFISHent                  probe design and selection
+361        omicverse/omicverse combining and filtering interaction results
+365       ConesaLab/PaintOmics   display of per-condition up or down state
+386         cddlab/rgi_toolkit                molecular geometry restraint
+396          cmzmasek/forester              taxonomy-id namespace matching
+
+scientific-logic commits with the note on how each went in
+ id                       repo concern                                                                                                             concern_note
+309            iLivius/BacFlux  likely A new step added the integrase gene after the confidence check, so one integrase could make weak gene hits look like ...
+310                  vgteam/vg    none                              Removes a flag that was always true and the branches that read it. The output is unchanged.
+319            Softleif/seqair    none                Removes duplicate records loaded from overlapping chunks. Pushed directly, tests added, and no later fix.
+320         MannLabs/alphabase    none Adds DiLeu4plex modification masses for serine and threonine. A maintainer approved PR 380 (there was a Copilot revie...
+324          scDiffEq/scDiffEq    none Keeps partially covered annotation columns writable when saving h5ad files. PR 113 was merged without review. Tests a...
+329          logannye/rosalind    none Adds a read-source interface and an in-memory source for pileup. PR 5 was merged without review. Tests added, no late...
+330    biodatageeks/polars-bio  likely Option use_zero_based=True promised BED-style coordinates but gave every block an end one base too short, so depth wa...
+332           BMGLab/PeakATail    none Passes the hyperparameters and the log2 fold-change threshold through the single-sample path. PR 56 was merged withou...
+333         GenomicAI/truecell    none Adds Harmony batch integration, WNN and extra reductions (CCA and RPCA are not implemented yet). PR 6 was merged with...
+334                  vgteam/vg    none Weights the allele mixture by unique allele content instead of whole traversal length. Part of PR 4990. Tests added. ...
+337             saezlab/annnet    none Changes how one field of an edge is written. Before, the edge was removed and added again. Pushed directly without re...
+344             SkBlaz/py3plex    none    Adds joins and error diagnostics to the query language. PR 1113 was merged without review. Tests added, no later fix.
+347 obophenotype/cell-ontology    none Adds a new cell type with logical axioms used to classify cells, including in the CELLxGENE subset. A reviewer approv...
+350  Binomica-Labs/SpliceCraft    none Implements the full GenBank 2.0 grammar and fixes the CDS start codon. Pushed directly without review. Tests added, n...
+353     COMBINE-lab/alevin-fry    none Old collations stored plate positions where quant expected sample numbers, so cells could get the wrong sample name w...
+355                  ncsa/NEAT    none Fixes how genotypes and metadata are read from the input VCF. PR 331 was merged without review. Tests added, no later...
+356         BBQuercus/eFISHent    none Changes off-target filtering and probe selection, so the designed probes can change. PR 11 was merged without review ...
+361        omicverse/omicverse    none Rebuilds the communication result by keeping the most significant row per pair and interaction. PR 793 was merged wit...
+365       ConesaLab/PaintOmics    none Gives each node one wedge per condition and drops the direction question. PR 104 was merged without review, but the c...
+367       TimoLassmann/samstat    none Reads whose CIGAR is all = (perfect matches) were counted as lacking mismatch data, which pushed the mismatch rate up...
+381         GenomicAI/truecell  likely When mapping new cells onto a reference, the code assumed all genes were scaled when only some were. Gene weights wer...
+386         cddlab/rgi_toolkit    none Replaces the planarity restraint with a best-fit-plane restraint over flat atom groups, so restrained structures can ...
+396          cmzmasek/forester    none Fixes a UniProt/NCBI taxonomy-id mismatch and adds an error log. Pushed directly without review. Tests added, no late...

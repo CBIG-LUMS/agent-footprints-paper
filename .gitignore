@@ -1,0 +1,5 @@
+__pycache__/
+.~lock.*
+data/clones/
+data/clones_topic/
+third_party/

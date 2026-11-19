@@ -1,0 +1,5 @@
+community,from,commits,agent,share_pct,agent_repos,agent_without_borderline,agent_since_2024,agent_of_all_pct
+bioconductor,2026-01-01,20633,1359,6.59,125,1330,1451,93.7
+biopython,2026-01-01,122,1,0.82,1,1,1,100.0
+nf-core,2026-01-01,24707,3649,14.77,84,3613,3916,93.2
+all,2026-01-01,45462,5009,11.02,210,4944,5368,93.3

@@ -1,0 +1,25 @@
+repo,needs_check,matched_topics,language,stars,agent_commits,context_files_at_head,description,link,is_bio_software (yes/no),note
+alp82/goodwatch-monorepo,broad_topics_only,dna,TypeScript,50,1761,AGENTS.md;CLAUDE.md,GoodWatch is a unique take on discovering movies and shows.,https://github.com/alp82/goodwatch-monorepo,no,
+elkimek/get-based,broad_topics_only,dna,TypeScript,158,881,AGENTS.md,"Private, local-first health intelligence for labs, 51 curated SNPs, wearables, light exposure, Biology Scores, optional AI, encrypted sync, sharing, and Agent Access.",https://github.com/elkimek/get-based,no,"Health App, not bioinformatics software"
+liberusoftware/php-dna,broad_topics_only,dna,PHP,36,100,,DNA processing and manipulating for PHP 8.3 / PHP 8.4,https://github.com/liberusoftware/php-dna,yes,
+cgevans/qslib,broad_topics_only,dna,Rust,15,47,.cursorrules,"QSLib is a package for interacting with Applied Biosystems' QuantStudio qPCR machines, intended for non-qPCR uses, such as DNA computing and molecular programming systems.",https://github.com/cgevans/qslib,yes,
+rnabioco/valr,broad_topics_only,genome,R,97,22,CLAUDE.md,Genome Interval Arithmetic in R,https://github.com/rnabioco/valr,yes,
+Fraternalilab/POPScomp,broad_topics_only,dna;rna,C,19,20,,Solvent Accessible Surface Areas of Biomolecules and their Complexes,https://github.com/Fraternalilab/POPScomp,yes,
+Plant-Food-Research-Open/assemblyqc,broad_topics_only,genome,Nextflow,42,19,,A Nextflow pipeline for evaluating assembly quality,https://github.com/Plant-Food-Research-Open/assemblyqc,yes,
+nextstrain/nextclade,broad_topics_only,dna;rna;sequencing,Rust,265,13,,"Viral genome alignment, mutation calling, clade assignment, quality checks and phylogenetic placement",https://github.com/nextstrain/nextclade,yes,
+Henryfud/nema,broad_topics_only,genome,HTML,191,13,CLAUDE.md,"A 302 neuron network on the real C. elegans wiring diagram, with a steering layer for local language models.",https://github.com/Henryfud/nema,no,Computational Neuroscience
+bgruening/galaxytools,broad_topics_only,rna,HTML,125,11,,:microscope::books: Galaxy Tool wrappers,https://github.com/bgruening/galaxytools,yes,
+brentp/mosdepth,broad_topics_only,genome;sequencing;wgs,Nim,879,4,.github/copilot-instructions.md,"fast BAM/CRAM depth calculation for WGS, exome, or targeted sequencing",https://github.com/brentp/mosdepth,yes,
+Lattice-Automation/seqviz,broad_topics_only,dna;rna,TypeScript,332,4,,"a JavaScript DNA, RNA, and protein sequence viewer",https://github.com/Lattice-Automation/seqviz,yes,
+wangyibin/CPhasing,broad_topics_only,genome,Python,115,4,,"C-Phasing/CPhasing: Phasing and scaffolding polyploid genomes based on 3C-based data (Pore-C, CiFi, Hi-C, Omni-C).",https://github.com/wangyibin/CPhasing,yes,
+zaixizhang/RNAGenesis,broad_topics_only,rna,Jupyter Notebook,37,3,,RNAGenesis: A Generalist Foundation Model for Functional RNA Therapeutics,https://github.com/zaixizhang/RNAGenesis,yes,
+emilitronic/Sequelizer,broad_topics_only,sequencing,C,10,3,,Genomics for mobile hardware,https://github.com/emilitronic/Sequelizer,yes,
+marrink-lab/polyply_1.0,broad_topics_only,dna,Python,203,2,,"Generate input parameters and coordinates for atomistic and coarse-grained simulations of polymers, ssDNA, and carbohydrates",https://github.com/marrink-lab/polyply_1.0,yes,
+grenaud/deML,broad_topics_only,sequencing,C++,54,2,,Maximum likelihood demultiplexing,https://github.com/grenaud/deML,yes,for NGS data
+BnanZ0/ok-duet-night-abyss,broad_topics_only,dna,Python,660,1,,二重螺旋 后台副本挂机 Automation for Duet Night Abyss,https://github.com/BnanZ0/ok-duet-night-abyss,no,
+Gaius-Augustus/Augustus,broad_topics_only,genome,C++,346,1,,Genome annotation with AUGUSTUS,https://github.com/Gaius-Augustus/Augustus,yes,
+gear-genomics/tracy,broad_topics_only,sequencing,C++,127,1,,"Basecalling, alignment, assembly and deconvolution of Sanger Chromatogram trace files",https://github.com/gear-genomics/tracy,yes,
+jonas-fuchs/varVAMP,broad_topics_only,sequencing,Python,58,1,,Design degenerated primers on highly variable alignments for full genome sequencing or qPCR. Specifically developed for viruses.,https://github.com/jonas-fuchs/varVAMP,yes,
+dfci/matchminer,no_language,genomics,,54,1,AGENTS.md,"Open-source software for clinical trial matching from Dana-Farber Cancer Institute: MatchMiner Genomics, MatchMiner-AI, and MatchMiner Dashboard.",https://github.com/dfci/matchminer,yes,
+MAGICS-LAB/GenoArmory,broad_topics_only,dna,Python,38,0,.cursor/rules/,GenoArmory: A Unified Evaluation Framework for Adversarial Attacks on Genomic Foundation Models,https://github.com/MAGICS-LAB/GenoArmory,yes,
+A-Ben-Mao/Medical_Self_Study_Repo,no_language,bioinformatics,,33,0,CLAUDE.md,记录本人在医学科研学习过程中，亲自验证过，而适合自学的资料。,https://github.com/A-Ben-Mao/Medical_Self_Study_Repo,no,

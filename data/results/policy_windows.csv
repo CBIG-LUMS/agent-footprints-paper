@@ -1,0 +1,7 @@
+community,date_kind,date,after_window_end,before_commits,before_agent,before_share_pct,before_agent_repos,after_commits,after_agent,after_share_pct,after_agent_repos
+bioconductor,effective,2026-05-28,2026-10-28,14362,344,2.4,42,6297,1004,15.94,96
+bioconductor,proposal,2026-05-07,2026-10-07,14578,329,2.26,39,6183,740,11.97,86
+biopython,effective,2026-06-08,2026-11-08,47,0,0.0,0,73,1,1.37,1
+biopython,proposal,2026-04-24,2026-09-24,48,0,0.0,0,54,0,0.0,0
+nf-core,effective,2026-04-23,2026-09-23,11935,1014,8.5,32,11561,1589,13.74,64
+nf-core,proposal,2025-10-15,2026-03-15,9961,81,0.81,13,11757,710,6.04,27

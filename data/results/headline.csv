@@ -1,0 +1,4 @@
+commits,agent,share_pct,agent_repos,community,repos,agent_without_borderline,first_agent_commit
+103523,1451,1.4,139,bioconductor,2418,1386,2024-11-12
+714,1,0.14,1,biopython,1,1,2026-10-07
+77160,3916,5.08,88,nf-core,169,3872,2025-05-09

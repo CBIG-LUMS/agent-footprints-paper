@@ -1,0 +1,27 @@
+# GitHub topics that mark a repository as bioinformatics.
+# One topic per line, lower case, exact GitHub topic spelling (hyphens, no spaces).
+bioinformatics
+computational-biology
+genomics
+bioconductor
+nextflow
+nf-core
+biopython
+single-cell
+rna-seq
+rnaseq
+proteomics
+transcriptomics
+rna
+structural-biology
+epigenomics
+epigenetics
+metagenomics
+microbiome
+gwas
+twas
+wgs
+whole-genome-sequencing
+sequencing
+genome
+dna
