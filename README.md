@@ -94,6 +94,14 @@ keep only the fields the scripts use. The first RQ3 sample (ids 1-50) was drawn 
 commit table and cannot be redrawn exactly; the second (ids 51-250) can. The clones and the comparison group's
 commit table (110 MB) are not included.
 
+## License
+
+The scripts in `src` are released under the MIT License (see `LICENSE`). The labels, notes, result tables and
+figure that we produced (`data`, `notes`, `figures`, `local_rules.yaml`) are released under CC BY 4.0
+(https://creativecommons.org/licenses/by/4.0/). The files in `data/raw` come from Bioconductor, GitHub and
+Biopython and keep their own terms. The rules in `heuristics.yaml` marked `source: robbes` come from Robbes et al.
+and remain theirs.
+
 ## Credits
 
 Detection patterns come from Robbes et al., "Agentic Much? Adoption of Coding Agents on GitHub"
