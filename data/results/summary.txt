@@ -56,7 +56,7 @@ is_agent (yes/no/borderline)  borderline  no  yes
 sample                                           
 flagged                                2   0   48
 unflagged                              0  50    0
-comparison group: {'yes': 15, 'borderline': 5}
+comparison group: {'yes': 16, 'borderline': 4}
 
 --- Comparison group ---
 2317 repositories, 655 with an agent commit or context file (28.3%)
@@ -101,23 +101,21 @@ dependency     8
 concern by how the commit went in
 concern                       likely  none  possible  All
 community    route                                       
-bioconductor PR                    0    55         3   58
+bioconductor PR                    0    57         1   58
              no GitHub repo        0     7         0    7
              pushed directly       3    57         0   60
 biopython    PR                    0     1         0    1
 nf-core      PR                    1   113         0  114
              pushed directly       0    10         0   10
-All                                4   243         3  250
+All                                4   245         1  250
 
 commits with a concern
- id                repo  concern                                             pr_link
-  4            GEOquery possible       https://github.com/seandavi/GEOquery/pull/162
- 22        singleCellTK possible https://github.com/compbiomed/singleCellTK/pull/800
- 25              spicyR   likely                             no PR (pushed directly)
- 81        singleCellTK possible https://github.com/compbiomed/singleCellTK/pull/799
- 96           GBScleanR   likely                             no PR (pushed directly)
-143           simpleSeg   likely                             no PR (pushed directly)
-209 nf-core/panoramaseq   likely       https://github.com/nf-core/panoramaseq/pull/1
+ id                repo  concern                                       pr_link
+  4            GEOquery possible https://github.com/seandavi/GEOquery/pull/162
+ 25              spicyR   likely                       no PR (pushed directly)
+ 96           GBScleanR   likely                       no PR (pushed directly)
+143           simpleSeg   likely                       no PR (pushed directly)
+209 nf-core/panoramaseq   likely https://github.com/nf-core/panoramaseq/pull/1
 
 scientific-logic commits with the note on how each went in
  id                      repo  concern                                                                                                             concern_note
@@ -126,7 +124,7 @@ scientific-logic commits with the note on how each went in
  10                   SpaNorm     none                    Pushed without review, but a test checks results are unchanged. Later fix not related to this change.
  11                HiCcompare     none Merged without review, but the added test verifies the results. No later changes or issues. (sha changed from merge 8...
  20                 methylSig     none                                                                          PR self-merged by the maintainer and CI passed.
- 22              singleCellTK possible Results change on purpose (new clusters ARI 0.72 vs old). Author compared old and new results, but no review is visib...
+ 22              singleCellTK     none Results change on purpose (new clusters ARI 0.72 vs old). Author compared old and new results, but no review is visib...
  25                    spicyR   likely Pushed directly, no review. New adjustment silently dropped when a condition was missing; found by the author on real...
  27      nf-core/scdownstream     none                                                                                 Self-merged, no review and no later fix.
  33               nf-core/mag     none                                                                         Approved by another maintainer and no later fix.
@@ -137,7 +135,7 @@ scientific-logic commits with the note on how each went in
  58                    spicyR     none                                                                    Pushed without review, tests added, and no later fix.
  66                   SpaNorm     none Adds an offset and a dispersion range to the NB fit in polishNB(), default output unchanged. Pushed directly without ...
  77                     MeLSI     none Replaces aov() and adonis2() with hand-written formulas, p-values are identical. Pushed directly without review and n...
- 81              singleCellTK possible Drops cells without a group (the new scrapper code had kept them as an extra NA group, which misaligned cluster sizes...
+ 81              singleCellTK     none Drops cells without a group (the new scrapper code had kept them as an extra NA group, which misaligned cluster sizes...
  84                     VISTA     none                                                                        Pushed without review, tests added, no later fix.
  86                   SpaNorm     none fitNB() gets a path that skips the dispersion loop when psi is supplied, default output unchanged. Pushed directly wi...
  91                 methylumi     none                                     Fixes a user-reported bug, self-merged, tests added, checks passed and no later fix.
@@ -162,7 +160,7 @@ scientific-logic commits with the note on how each went in
 186      nf-core/scdownstream     none                                         Self-merged without review, all 34 checks passed, tests added, and no later fix.
 200               nf-core/mag     none                    Updates the PyDamage containers so docker results match conda. Approved in PR 1088, and no later fix.
 206    nf-core/rnastructurome     none                                                                               Reviewed, checks passed, and no later fix.
-209       nf-core/panoramaseq   likely                         Cleanup commit dropped the tool settings without saying so merged with failing tests; not fixed.
+209       nf-core/panoramaseq   likely                Cleanup commit dropped the tool settings without saying so, and was merged with failing tests. Not fixed.
 216       nf-core/metatdenovo     none                                    Fixes misdetection of already formatted MetaEuk input, tests added, and no later fix.
 220 nf-core/epitopeprediction     none                                                                         Approved by another maintainer and no later fix.
 222             nf-core/sarek     none Fixes how SnpSift finds its database file and makes snpsift-only mode fall back to the original VCF. Approved in PR 2...
